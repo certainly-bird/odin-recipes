@@ -1,14 +1,45 @@
+:root{
+    --text: #1a0a0a;
+    --background: #ffd2d2;
+    --primary: #cf4444;
+    --secondary: #e88d8d;
+    --accent: #e55353;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.home, .lasagna, .chili, .pie{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+h1,h2,p,ul,ol,nav,a{
+    color: var(--text);
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
 h1{
     font-size: 50px;
     font-weight: bold;
-    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav{
+    background-color: var(--secondary);
+    width: fit-content;
+    padding: 20px;
+    border: 3px solid var(--text);
 }
 
 nav,a{
-    font-size: 20px;
-    font-weight: normal;
-    color: black;
-    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
     text-decoration: none;
 }
 
@@ -16,10 +47,63 @@ a:hover{
     text-decoration: underline;
 }
 
-div{
-    background-color: rgb(237, 237, 237);
+img{
+    border: 3px solid var(--text);
+    height: 500px;
+    width: auto;
+    padding: 20px;
+    background-color: var(--primary);
 }
 
-img{
-    border: 5px solid black;
+.container{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.box{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--primary);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul, ol, .box p{
+    background-color: var(--secondary);
+    width: 300px;
+    padding: 50px;
+    border: 3px solid var(--text);
+    margin: 20px;
+}
+
+div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description{
+    background-color: var(--primary);
+    padding: 20px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.description p{
+    background-color: var(--secondary);
+    width: 800px;
+    padding: 50px;
+    border: 3px solid var(--text);
+    margin-bottom: 20px;
+}
+
+.description h2, .box h2{
+    background-color: var(--secondary);
+    padding: 20px;
+    border: 3px solid var(--text);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
